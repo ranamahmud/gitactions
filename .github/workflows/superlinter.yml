@@ -1,16 +1,5 @@
-name; Super-linter
-
-on: push
-
-jobs:
-  super-lint:
-    name: Lint code base
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout code
-        users: actions/checkout@v2
-      - name: Run Super Linter
-        usage: github/super-linter@v3
-        env:
-          DEFAULT_BRANCH: main
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN}}
+            - name: Super-Linter
+  # You may pin to the exact commit or the version.
+  # uses: super-linter/super-linter@b92721f792f381cedc002ecdbb9847a15ece5bb8
+  uses: super-linter/super-linter@v7.1.0
+          
